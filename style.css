@@ -643,16 +643,13 @@ body {
   }
 
   .footer-icons {
-    gap: 100px;
-    left: 150px;
+    gap: 50px;
+    left: 199px;
   }
 
   .footer-left {
     font-size: 17px;
   }
-
-
- 
 
 }
 
