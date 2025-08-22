@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 
@@ -9,7 +9,7 @@ body {
 }
   
   header {
-    background-color: #010356;
+    background-color: #0077b6;
     color: white;
     padding: 15px 0;
     height: 35px;
@@ -30,7 +30,7 @@ body {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    font-size: 1.0em;
+    font-size: 1.1em;
     cursor: pointer;
    
   }
@@ -40,6 +40,7 @@ body {
   
   nav a {
     color: white;
+    font-size: 17px;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -146,12 +147,12 @@ body {
   }
   
   .hero-text {
-    max-width: 600px;
+    max-width: 500px;
     z-index: 1;
   }
   
   .hero h2 {
-    font-size: 2.4em;
+    font-size: 2.1em;
     margin-bottom: 10px;
     font-weight: 900;
   }
@@ -193,7 +194,7 @@ body {
   
   .btn-contato {
     display: inline-block;
-    background-color: #010356;
+    background-color: #0077b6;
     color: white;
     padding: 10px 40px;
     text-decoration: none;
@@ -227,37 +228,37 @@ body {
     margin-top: 10px; /* Espaçamento acima */
   }
   
-  .services-list p {
+.services-list p {
     margin: 0; /* Remover margem padrão do <p> */
     display: flex;
     align-items: center; /* Alinhar verticalmente o ponto com o texto */
     font-size: 0.9em; /* Tamanho de fonte pequeno */
   }
   
-  .services-list .bullet {
+.services-list .bullet {
     margin-right: 5px; /* Espaçamento entre o ponto e o texto */
-    font-size: 1.2em; /* Tamanho do ponto */
-    color: #010356; /* Cor do ponto */
+    font-size: 1.7em; /* Tamanho do ponto */
+    color: #0077b6; /* Cor do ponto */
   }
   
 
 
  
   
-   .services, .contato {
+.services, .contato {
     padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
   }
   
-   .services h2, .contato h2 {
+.services h2, .contato h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 32px;
     font-weight: 900;
   }
 
-  .sobre-nos {
+.sobre-nos {
   padding: 60px 20px;
   text-align: center;
 }
@@ -277,8 +278,9 @@ body {
 .sobre-nos h3 {
   margin-top: 29px;
   font-weight: 700;
-  background: linear-gradient(to right,  #010356 );
+  background: linear-gradient(to right,  #0077b6 );
   border-radius: 15px;
+  padding: 10px;
   color: white;
   
 }
@@ -291,36 +293,90 @@ body {
   font-weight: 600;
 }
   
-  .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .card {
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.618); /* sombra leve */
-    padding: 40px;
-    width: 400px;
-    border-radius: 8px;
-    margin-top: 25px;
-    gap: 30px;
-    transition: box-shadow 0.3s ease; /* transição suave */
-  }
 
-  .card:hover {
-  box-shadow: 0 0 20px rgb(0, 0, 0); /* sombra mais escura no hover */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px; /* mais respiro */
+  padding: 40px 10px;
 }
 
-  .card h3 {
-    font-weight: 800;
-  }
+.services h2 {
+  margin-bottom: -15px;
+   font-size: 2.6rem;
+}
 
-  .card p {
-    font-weight: 500;
-  }
+/* Card estilizado */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f7f9fc);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 390px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: all 0.35s ease;
+  text-align: center;
+  border: 1px solid rgba(0, 119, 182, 0.08); /* leve tom da cor principal */
+  position: relative;
+  overflow: hidden;
+}
 
+/* Efeito moderno no hover */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0,119,182,0.12), transparent 70%);
+  transform: scale(0);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.card:hover::before {
+  transform: scale(1);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  border-color: #0096c7;
+}
+
+/* Títulos */
+.card h3 {
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+/* traços no card */
+.card h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0096c7;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Texto */
+.card p {
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  z-index: 1;
+  position: relative;
+}
 
 
 .contato-section {
@@ -342,14 +398,14 @@ body {
 }
 
 .contato-box h2 {
-  color: #004aad;
+  color: #0077b6;
   font-size: 2.5em;
   margin-bottom: 10px;
   font-weight: 900;
 }
 
 .contato-box p {
-  color: #000000;
+  color: black;
   font-size: 1.2em;
   margin-bottom: 30px;
   font-weight: 800;
@@ -372,7 +428,7 @@ body {
 }
 
 .item span {
-  background-color: #004aad;
+  background-color: #0077b6;
   color: white;
   width: 45px;
   height: 45px;
@@ -384,8 +440,8 @@ body {
 }
 
 .item p {
-  color: #333;
-  font-size: 1em;
+  color: #000000;
+  font-size: 1.2em;
   margin: 0;
   line-height: 1.4;
 }
@@ -398,7 +454,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #010356;
+  background: #0077b6;
   color: #fff;
   flex-wrap: wrap;
   min-height: 80px;
@@ -408,6 +464,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-size: 18px;
+}
+
+.footer-left a{
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -454,7 +516,7 @@ body {
 .footer-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #010356; /* Mesma cor do fundo do footer */
+  background-color: #0077b6; /* Mesma cor do fundo do footer */
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -475,7 +537,7 @@ body {
 }
 
 .footer-dropdown-content a:hover {
-  background-color: #1a1a7a;
+  background-color: #0077b6;
   transform: scale(1.05);
 }
 
