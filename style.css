@@ -130,7 +130,7 @@ nav {
     z-index: 1;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 2.1em;
     margin-bottom: 10px;
     font-weight: 900;
@@ -147,7 +147,7 @@ nav {
     background-image: url('img/pexels-mart-production-7089392.jpg');
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 120%;
     mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%);
     border-radius: 10px;
@@ -206,7 +206,7 @@ nav {
     margin: 0;
     display: flex;
     align-items: center;
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 .services-list .bullet {
@@ -389,6 +389,7 @@ nav {
     gap: 5px;
     width: 100%;
     max-width: 450px;
+    margin-bottom: 20px;
 }
 
 .item span {
@@ -403,12 +404,36 @@ nav {
     font-size: 1.0em;
 }
 
-.item p {
+.item a {
     color: #000000;
     font-size: 1.2em;
-    margin: 0;
     line-height: 1.4;
+    text-decoration: none; /* tira o sublinhado padrão do link */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
+
+.item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: #270b69;
+    transition: width 0.3s ease;
+}
+
+.item a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
 /* Footer */
 .footer {
     display: flex;
