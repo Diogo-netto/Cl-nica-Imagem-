@@ -1,30 +1,29 @@
 body {
     margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
-
-   html {
-  scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-  
-  header {
-    background-color: #0077b6;
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #270b69;
     color: white;
     padding: 15px 0;
     height: 35px;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
     padding: 10px 20px;
-  }
+}
 
-   /* Estilos para o link */
+/* Logo */
 .logo a {
     text-decoration: none;
     font-weight: bold;
@@ -32,13 +31,10 @@ body {
     text-transform: uppercase;
     font-size: 1.1em;
     cursor: pointer;
-   
-  }
+}
 
-  
-  
-  
-  nav a {
+/* Navegação */
+nav a {
     color: white;
     font-size: 17px;
     margin: 0 15px;
@@ -46,36 +42,32 @@ body {
     font-weight: bold;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  nav a:hover {
-    transform: scale(1.2);
-    
-  }
+}
 
-  .dropdown {
+nav a:hover {
+    transform: scale(1.2);
+}
+
+/* Dropdown */
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
 
-  
-
-  /* Conteúdo do dropdown (inicialmente escondido) */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 220px;
     padding: 15px;
     z-index: 2;
     border-radius: 15px;
-  }
+}
 
-  /* Botões dentro do dropdown */
-  .dropdown-content a {
-    display: flex;              /* Adicionado */
-    align-items: center;        /* Centraliza verticalmente */
-    justify-content: center;    /* Centraliza horizontalmente */
-    gap: 10px; 
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
     text-align: center;
     background-color: rgb(73, 73, 73);
@@ -87,55 +79,42 @@ body {
     cursor: pointer;
     font-size: 18px;
     margin-left: 8px;
-  }
-
-  .dropdown-content a:hover {
-
-    color: rgb(255, 254, 254);
-  }
-
-  
-  /* Mostrar dropdown ao passar o mouse */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown-content .bi {
-    font-size: 25px;
-    
-  }
-
-
-   
-  /* parte hamburguer e x fechar  */
-  /* Menu normal visível */
-  nav {
-  display: block;
 }
 
+.dropdown-content a:hover {
+    color: rgb(255, 254, 254);
+}
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-/* Hambúrguer e botão fechar escondidos por padrão */
+.dropdown-content .bi {
+    font-size: 25px;
+}
+
+/* Menu hambúrguer */
+nav {
+    display: block;
+}
+
 .hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 .close-btn {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
-/* final parte hamburguer */
 
-
-
-/* parte 2 fotoe testo */
-  .hero {
+/* Hero */
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,27 +123,26 @@ body {
     background-size: cover;
     height: 400px;
     padding: 50px 50px;
-  }
-  
-  .hero-text {
+}
+
+.hero-text {
     max-width: 500px;
     z-index: 1;
-  }
-  
-  .hero h2 {
+}
+
+.hero h2 {
     font-size: 2.1em;
     margin-bottom: 10px;
     font-weight: 900;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
     font-weight: 700;
-  }
+}
 
-
-  .hero-bg {
+.hero-bg {
     flex: 1;
     background-image: url('img/pexels-mart-production-7089392.jpg');
     background-size: cover;
@@ -173,11 +151,12 @@ body {
     mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%);
     border-radius: 10px;
-  }
+}
 
-  .whatsapp-float {
+/* WhatsApp flutuante */
+.whatsapp-float {
     position: absolute;
-   bottom: 40px;
+    bottom: 40px;
     right: 50px;
     font-size: 3rem;
     color: #00a53c;
@@ -185,16 +164,16 @@ body {
     z-index: 10;
     text-decoration: none;
     transition: transform 0.3s ease;
-  }
-  
-  .whatsapp-float:hover {
+}
+
+.whatsapp-float:hover {
     transform: scale(1.1);
-  }
-  
-  
-  .btn-contato {
+}
+
+/* Botão contato */
+.btn-contato {
     display: inline-block;
-    background-color: #0077b6;
+    background-color: #270b69;
     color: white;
     padding: 10px 40px;
     text-decoration: none;
@@ -202,588 +181,461 @@ body {
     font-weight: 500;
     transition: transform 0.3s ease, background-color 0.3s ease;
     margin-top: 10px;
-  }
-  
-  .btn-contato:hover {
+}
+
+.btn-contato:hover {
     transform: scale(1.1);
-    background-color: #010356; /* tom mais escuro no hover (opcional) */
-  }
+    background-color: #577cf5;
+}
 
-  .btn-contato .bi{
+.btn-contato .bi {
     padding: 10px;
-  }
-  /* final parte 2 */
+}
 
-
-
-
-
-  /* Estilo para a lista de serviços */
+/* Serviços */
 .services-list {
     display: flex;
-    gap: 5px; /* Espaçamento entre os itens */
-    flex-wrap: wrap; /* Para garantir que os itens quebrem para a linha seguinte se necessário */
-    font-size: 18px; /* Tamanho da fonte dos itens */
-    color: #333; /* Cor do texto */
-    margin-top: 10px; /* Espaçamento acima */
-  }
-  
+    gap: 5px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
 .services-list p {
-    margin: 0; /* Remover margem padrão do <p> */
+    margin: 0;
     display: flex;
-    align-items: center; /* Alinhar verticalmente o ponto com o texto */
-    font-size: 0.9em; /* Tamanho de fonte pequeno */
-  }
-  
+    align-items: center;
+    font-size: 0.9em;
+}
+
 .services-list .bullet {
-    margin-right: 5px; /* Espaçamento entre o ponto e o texto */
-    font-size: 1.7em; /* Tamanho do ponto */
-    color: #0077b6; /* Cor do ponto */
-  }
-  
+    margin-right: 5px;
+    font-size: 1.7em;
+    color: #270b69;
+}
 
-
- 
-  
 .services, .contato {
     padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
-  }
-  
+}
+
 .services h2, .contato h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 32px;
     font-weight: 900;
-  }
+}
 
 .sobre-nos {
-  padding: 60px 20px;
-  text-align: center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .container-sobre {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .sobre-nos h1 {
-  font-size: 2.6rem;
-  margin-bottom: 20px;
-  color: #000000;
-  font-weight: 800;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 800;
 }
 
 .sobre-nos h3 {
-  margin-top: 29px;
-  font-weight: 700;
-  background: linear-gradient(to right,  #0077b6 );
-  border-radius: 15px;
-  padding: 10px;
-  color: white;
-  
+    margin-top: 29px;
+    font-weight: 700;
+    background: linear-gradient(to right,  #270b69 );
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
 }
 
 .sobre-nos p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #000000;
-  margin-bottom: 20px;
-  font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
-  
 
-
+/* Cards */
 .cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px; /* mais respiro */
-  padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 10px;
 }
 
 .services h2 {
-  margin-bottom: -15px;
-   font-size: 2.6rem;
+    margin-bottom: -15px;
+    font-size: 2.6rem;
 }
 
-/* Card estilizado */
 .card {
-  background: linear-gradient(145deg, #ffffff, #f7f9fc);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  width: 390px;
-  border-radius: 20px;
-  margin-top: 20px;
-  transition: all 0.35s ease;
-  text-align: center;
-  border: 1px solid rgba(0, 119, 182, 0.08); /* leve tom da cor principal */
-  position: relative;
-  overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #f7f9fc);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 390px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: all 0.35s ease;
+    text-align: center;
+    border: 1px solid rgba(0, 119, 182, 0.08);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Efeito moderno no hover */
 .card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, rgba(0,119,182,0.12), transparent 70%);
-  transform: scale(0);
-  transition: transform 0.4s ease;
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #38d2f81f, transparent 70%);
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    z-index: 0;
 }
 
 .card:hover::before {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
-  border-color: #0096c7;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+    border-color: aqua;
 }
 
-/* Títulos */
 .card h3 {
-  font-weight: 900;
-  font-size: 1.7rem;
-  color: #0077b6;
-  margin-bottom: 15px;
-  position: relative;
-  z-index: 1;
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: #270b69;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
 }
 
-/* traços no card */
 .card h3::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #0096c7;
-  margin: 10px auto 0;
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #270b69;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
-/* Texto */
 .card p {
-  font-weight: 600;
-  color: #000000;
-  line-height: 1.6;
-  font-size: 1.1rem;
-  z-index: 1;
-  position: relative;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    z-index: 1;
+    position: relative;
 }
 
-
+/* Contato */
 .contato-section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Ajuste para não invadir o footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px; /* Espaço extra para o footer */
 }
 
 .contato-box {
-  background-color: white;
-  padding: 50px 20px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  width: 90%;
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 99%;
 }
 
 .contato-box h2 {
-  color: #0077b6;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  font-weight: 900;
+    color: #270b69;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 900;
 }
 
 .contato-box p {
-  color: black;
-  font-size: 1.2em;
-  margin-bottom: 30px;
-  font-weight: 800;
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 800;
 }
 
 .contato-itens {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
 }
 
 .item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-  max-width: 380px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 450px;
 }
 
 .item span {
-  background-color: #0077b6;
-  color: white;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  font-size: 1.4em;
+    background-color: #270b69;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.0em;
 }
 
 .item p {
-  color: #000000;
-  font-size: 1.2em;
-  margin: 0;
-  line-height: 1.4;
+    color: #000000;
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1.4;
 }
-
-
-
-  /* Estilo para o footer (mantido do original) */
+/* Footer */
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background: #0077b6;
-  color: #fff;
-  flex-wrap: wrap;
-  min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #270b69;
+    color: #fff;
+    flex-wrap: wrap;
+    min-height: 80px;
 }
 
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
 }
 
-.footer-left a{
-  text-decoration: none;
-  color: white;
+.footer-left a {
+    text-decoration: none;
+    color: white;
 }
-
 
 .footer-menu {
-  text-align: center;
+    text-align: center;
 }
 
 .footer-menu h4 {
-  margin: 0 0 10px;
-  font-size: 16px;
-  color: #fff;
-  padding-right: 180px;
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #fff;
 }
 
 .footer-menu a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  margin: 2px 0;
-  font-size: 14px;
-  padding-right: 180px;
-  transition: transform 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 2px 0;
+    font-size: 14px;
+    transition: transform 0.3s ease;
 }
 
 .footer-menu a:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-/* Estilo atualizado para o dropdown no footer (abrindo para o lado direito em coluna) */
+/* Footer dropdown */
 .footer-dropdown {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  text-align: left;
-  
+    position: relative;
+    display: inline-block;
+    width: auto;
+    text-align: left;
 }
 
 .dropdown-trigger {
-  cursor: pointer;
-  padding-right: 180px !important;
-  position: relative;
+    cursor: pointer;
 }
 
 .footer-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #0077b6; /* Mesma cor do fundo do footer */
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 5px;
-  top: -95px; /* Ajustado para alinhar com o item principal */
-  left: 30%; /* Posiciona à direita do elemento pai */
-  border-left: 1px solid rgba(255,255,255,0.2); /* Separador sutil */
+    display: none;
+    position: absolute;
+    background-color: #270b69;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    top: -110px;
+    left: 110%; /* abre à direita do item pai */
+    border-left: 1px solid rgba(255,255,255,0.2);
 }
 
 .footer-dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  padding-right: 0 !important;
-  font-size: 13px;
-  text-align: left;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    text-align: left;
 }
 
 .footer-dropdown-content a:hover {
-  background-color: #0077b6;
-  transform: scale(1.05);
+    background-color: #270b69;
+    transform: scale(1.05);
 }
 
 .footer-dropdown:hover .footer-dropdown-content {
-  display: block;
+    display: block;
 }
 
-/* Estilos originais do footer (mantidos) */
 .footer-icons {
-  display: flex;
-  gap: 190px;
-  position: relative;
+    display: flex;
+    gap: 20px;
 }
 
 .footer-icons a {
-  font-size: 1.6em;
-  color: #fff;
-  transition: transform 0.3s ease;
+    font-size: 1.6em;
+    color: #fff;
+    transition: transform 0.3s ease;
 }
 
 .footer-icons a:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .icon-link {
-  position: relative;
-  font-size: 1.6em;
-  color: #fff;
-  transition: transform 0.3s ease;
+    position: relative;
+    font-size: 1.6em;
+    color: #fff;
+    transition: transform 0.3s ease;
 }
 
 .icon-link:hover {
-  transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .icon-label {
-  position: absolute;
-  bottom: 130%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 10px;
-  font-weight: bold;
-  color: white;
-  white-space: nowrap;
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.1s ease-in-out;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease-in-out;
 }
 
 .icon-label::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 6px;
-  border-style: solid;
-  border-color: currentColor transparent transparent transparent;
-}
-/* final do codigo  */
-
-
-
-
-@media (max-width: 768px) { 
-
-  header {
-    width: 100%;
-  }
-
-  /* Ajuste do container para distribuir os elementos */
-  .container {
-    justify-content: space-between;
-    padding: 0px 15px;
-  }
-  
-  /* Logo à esquerda */
-  .logo {
-    text-align: left;
-  }
-  
-  /* Hambúrguer à direita */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-  }
-  
-  /* Esconde o menu normal */
-  nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 280px;
-    height: 80%;
-    background-color: #010356;
-    padding: 20px;
-    transition: left 0.3s ease;
-    z-index: 1000;
-    overflow-y: auto;
-    border-radius: 10px;
-  }
-
-  /* Quando o menu está aberto */
-  nav.open {
-    left: 0;
-    display: block;
-  }
-
-  /* Ajustes para links no menu mobile */
-  nav a {
-    display: block;
-    margin: 15px 0;
-    padding: 10px;
-    font-size: 21px;
-   
-  }
-
-  /* Ajustes para dropdown no menu mobile */
-  nav .dropdown {
-    display: block;
-    width: 100%;
-  }
-
-  /* Importante: Modificar o comportamento do dropdown no mobile */
-  nav .dropdown-content {
-    position: static;
-    width: 100%;
-    margin-top: 10px;
-    display: none;
-    padding: 0;
-  }
-  
-  /* Mostrar dropdown ao clicar (será controlado por JS) */
-  nav .dropdown-content.active {
-    display: block;
-  }
-
-  /* Ajuste para os links dentro do dropdown no mobile */
-  nav .dropdown-content a {
-    margin-left: 1px;
-    width: calc(100% - 30px);
-  }
-
-  /* Mostra o botão fechar dentro do menu */
-  .close-btn {
-    display: block;
+    content: '';
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .footer-menu a {
-    flex-direction: column;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    font-size: 15px;
-
-  }
-
-  .footer-icons {
-    gap: 50px;
-    left: 199px;
-  }
-
-  .footer-left {
-    font-size: 15px;
-  }
-
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: currentColor transparent transparent transparent;
 }
 
+/* Formulário contato */
+.form-contato {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
 
+.form-contato input {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #2f04a5;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 700;
+   
+}
 
+.form-contato button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #270b69;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+    transform: scale(1.05);
+    background-color: #577cf5;
+}
+
+.form-contato i {
+    margin-left: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    nav { display: none; position: fixed; top: 0; left: -250px; width: 280px; height: 80%; background-color: #270b69; padding: 20px; transition: left 0.3s ease; z-index: 1000; overflow-y: auto; border-radius: 10px; }
+    nav.open { left: 0; display: block; }
+    nav a { display: block; margin: 15px 0; padding: 10px; font-size: 21px; }
+    nav .dropdown-content { position: static; width: 100%; margin-top: 10px; display: none; padding: 0; }
+    nav .dropdown-content.active { display: block; }
+    nav .dropdown-content a { margin-left: 1px; width: calc(100% - 30px); }
+    .close-btn { display: block; top: 10px; right: 10px; }
+
+    /* Footer dropdown abre para o lado mesmo no mobile */
+    .footer-dropdown-content {
+        top: -140;
+        left: 110%;
+        border-radius: 15px;
+    }
+
+    .footer-menu a { flex-direction: column; margin-bottom: 10px; margin-left: 5px; font-size: 15px; }
+    .footer-icons { gap: 50px; }
+    .footer-left { font-size: 15px; }
+}
 
 @media (max-width: 1024px) {
-  .hero {
-    padding: 30px;
-  }
-  
-  .hero-text h2 {
-    font-size: 28px;
-  }
-  
-  .hero-text p {
-    font-size: 15px;
-  }
+    .hero { padding: 30px; }
+    .hero-text h2 { font-size: 28px; }
+    .hero-text p { font-size: 15px; }
 }
-
-
-
-
 
 @media (max-width: 480px) {
-
-  @media (max-width: 480px) {
-  .contato-box h2 {
-    font-size: 2em;
-  }
-
-  .item p {
-    font-size: 0.95em;
-  }
-}
-  .hero {
-    padding: 15px;
-  }
-  
-  .hero-text {
-    max-width: 60%;
-  }
-  
-  .hero-text h2 {
-    font-size: 19px;
-  }
-  
-  .hero-text p {
-    font-size: 13px;
-    line-height: 1.4;
-  }
-  
-  .services-list p {
-    font-size: 13px;
-    margin: 4px 0;
-  }
-  
-  .bullet {
-    margin-right: 4px;
-  }
-  
-  .btn-contato {
-    padding: 9px 20px;
-    font-size: 13px;
-  }
-  
-  .whatsapp-float {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    bottom: 20px;
-    right: 20px;
-  }
-
+    .hero { padding: 15px; }
+    .hero-text { max-width: 60%; }
+    .hero-text h2 { font-size: 19px; }
+    .hero-text p { font-size: 13px; line-height: 1.4; }
+    .services-list p { font-size: 13px; margin: 4px 0; }
+    .bullet { margin-right: 4px; }
+    .btn-contato { padding: 9px 20px; font-size: 13px; }
+    .whatsapp-float { width: 50px; height: 50px; font-size: 25px; bottom: 20px; right: 20px; }
+    .contato-box h2 { font-size: 2em; }
+    .item p { font-size: 0.95em; }
 }
