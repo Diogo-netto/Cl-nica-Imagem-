@@ -147,7 +147,7 @@ nav {
     background-image: url('img/pexels-mart-production-7089392.jpg');
     background-size: cover;
     background-position: center;
-    height: 120%;
+    height: 100%;
     mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%);
     border-radius: 10px;
@@ -644,6 +644,7 @@ nav {
     .footer-menu a { flex-direction: column; margin-bottom: 10px; margin-left: 5px; font-size: 15px; }
     .footer-icons { gap: 50px; }
     .footer-left { font-size: 15px; }
+    .footer h4{margin-top: 25px;}
 }
 
 @media (max-width: 1024px) {
@@ -655,7 +656,7 @@ nav {
 @media (max-width: 480px) {
     .hero { padding: 15px; }
     .hero-text { max-width: 60%; }
-    .hero-text h2 { font-size: 19px; }
+    .hero-text h1 { font-size: 19px; }
     .hero-text p { font-size: 13px; line-height: 1.4; }
     .services-list p { font-size: 13px; margin: 4px 0; }
     .bullet { margin-right: 4px; }
